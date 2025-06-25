@@ -1,9 +1,17 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to top, #F8CDDA, #1D2B64);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   color: white;
   overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
@@ -18,12 +26,8 @@ header {
 }
 
 @keyframes glow {
-  from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #F8CDDA, 0 0 15px #F8CDDA;
-  }
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #1D2B64, 0 0 30px #1D2B64;
-  }
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #F8CDDA; }
+  to { text-shadow: 0 0 10px #fff, 0 0 20px #1D2B64; }
 }
 
 .subtitle {
@@ -115,6 +119,18 @@ header {
 @keyframes wave-animation {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+.section-box a {
+  color: #FFD6EC;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.section-box a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #F8CDDA;
 }
 
 @media (max-width: 768px) {
