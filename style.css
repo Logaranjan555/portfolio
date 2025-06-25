@@ -98,7 +98,7 @@ header {
 }
 
 .wave {
-  background: url('https://i.ibb.co/wBcY1VJ/wave2.png') repeat-x;
+  background: linear-gradient(to top, #1d4ed8, #3b82f6); /* Fix: Replace missing image with gradient */
   position: absolute;
   bottom: 0;
   width: 200%;
