@@ -112,16 +112,16 @@ header {
   transform: scale(1.02);
 }
 
-/* ✅ Updated Contact Link Style */
+
 .contact-links a {
-  color: #A6D9F7; /* visible light ocean blue */
+  color: #A6D9F7; 
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .contact-links a:hover {
-  color: #5FB8DE; /* hover color */
+  color: #5FB8DE; 
   text-shadow: 0 0 6px #5FB8DE;
   text-decoration: underline;
 }
