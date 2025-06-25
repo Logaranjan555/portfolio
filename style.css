@@ -32,12 +32,13 @@ header {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #F8CDDA, 0 0 15px #F8CDDA;
+    text-shadow: 0 0 5px #A6D9F7, 0 0 10px #4DA6D8, 0 0 15px #4DA6D8;
   }
   to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #1D2B64, 0 0 30px #1D2B64;
+    text-shadow: 0 0 10px #5FB8DE, 0 0 20px #1878A5, 0 0 30px #032F4C;
   }
 }
+
 
 .subtitle {
   font-size: 1.2rem;
