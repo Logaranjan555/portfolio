@@ -14,9 +14,9 @@ background: linear-gradient(to bottom, #A6D9F7, #4DA6D8, #1878A5, #075A87, #032F
   width: 100%;
   height: 100vh;
   background: url('assets/animations/ocean-waves.gif') center center/cover no-repeat;
-  z-index: -2;
+  z-index: -4;
   opacity: 0.5;
-  filter: brightness(0.6);
+  filter: brightness(0.1);
 }
 
 header {
