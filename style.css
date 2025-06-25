@@ -1,10 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-background: linear-gradient(to bottom, #A6D9F7, #4DA6D8, #1878A5, #075A87, #032F4C);
-
-
-
+  background: linear-gradient(to bottom, #A6D9F7, #4DA6D8, #1878A5, #075A87, #032F4C);
   color: white;
   overflow-x: hidden;
 }
@@ -38,7 +35,6 @@ header {
     text-shadow: 0 0 10px #5FB8DE, 0 0 20px #1878A5, 0 0 30px #032F4C;
   }
 }
-
 
 .subtitle {
   font-size: 1.2rem;
@@ -116,14 +112,17 @@ header {
   transform: scale(1.02);
 }
 
-
-
+/* ✅ Updated Contact Link Style */
 .contact-links a {
-  color:#ffffff10;
+  color: #A6D9F7; /* visible light ocean blue */
   text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .contact-links a:hover {
+  color: #5FB8DE; /* hover color */
+  text-shadow: 0 0 6px #5FB8DE;
   text-decoration: underline;
 }
 
