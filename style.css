@@ -92,21 +92,21 @@ header {
 
 .gradient-link {
   font-weight: bold;
-  background: linear-gradient(to right, #ff8a00, #e52e71, #9b00e8);
+  background: linear-gradient(to right, #1D2B64, #F8CDDA, #1D2B64);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: textColorAnim 4s ease-in-out infinite;
+  animation: textColorAnim 6s ease-in-out infinite;
   transition: text-shadow 0.3s ease;
 }
 
 .gradient-link:hover {
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
 
 @keyframes textColorAnim {
-  0%, 100% { background-position: 0% 50%; }
+  0%,100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
 }
 
