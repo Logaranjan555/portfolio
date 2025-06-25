@@ -1,33 +1,28 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top, #F8CDDA, #1D2B64);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(to top, #F8CDDA, #1D2B64);  
   color: white;
   overflow-x: hidden;
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.animated-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url('assets/animations/ocean-waves.gif') center center/cover no-repeat;
+  z-index: -2;
+  opacity: 0.6;
 }
 
 header {
   text-align: center;
-  padding: 100px 20px 80px;
+  padding: 100px 20px 50px;
 }
 
 #typewriter {
   font-size: 2.5rem;
   font-weight: bold;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from { text-shadow: 0 0 5px #fff, 0 0 10px #F8CDDA; }
-  to { text-shadow: 0 0 10px #fff, 0 0 20px #1D2B64; }
 }
 
 .subtitle {
@@ -44,7 +39,7 @@ header {
   text-decoration: none;
   color: white;
   transition: all 0.3s ease-in-out;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   display: inline-block;
 }
 
@@ -67,71 +62,39 @@ header {
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 15px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15), 0 4px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: transform 0.3s ease;
+  background: #ffffff10;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
 }
 
-.project-box.highlight:hover {
-  transform: scale(1.02);
-}
-
-.inner-box {
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s ease;
-}
-
-.project-box:hover .inner-box {
-  transform: scale(1.02);
-}
-
-/* White colored email/github links */
-.plain-link {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.plain-link:hover {
-  color: #FFDDEE;
-  text-decoration: underline;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-}
-
-.sky {
+.ocean {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
+  height: 5%;
   width: 100%;
-  height: 25vh;
+  background: transparent;
+  overflow: hidden;
   z-index: -1;
-  pointer-events: none;
 }
 
-.bird {
-  width: 50px;
-  height: 50px;
-  background: url('https://i.ibb.co/WkPmz8F/bird-fly.gif') no-repeat center center / contain;
+.wave {
+  background: url('https://i.ibb.co/wBcY1VJ/wave2.png') repeat-x;
   position: absolute;
-  animation: fly 20s linear infinite;
-  top: 30%;
+  bottom: 0;
+  width: 200%;
+  height: 100%;
+  animation: wave-animation 8s linear infinite;
+  opacity: 0.3;
 }
 
-.bird2 {
-  top: 10%;
-  animation-delay: 10s;
+.wave:nth-child(2) {
+  animation-delay: -4s;
+  opacity: 0.2;
 }
 
-@keyframes fly {
-  0% { left: -60px; transform: scaleX(1); }
-  50% { transform: scaleX(-1); }
-  100% { left: 110%; transform: scaleX(1); }
+@keyframes wave-animation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @media (max-width: 768px) {
