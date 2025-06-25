@@ -1,28 +1,33 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top, #F8CDDA, #1D2B64);  
+  background: linear-gradient(to top, #F8CDDA, #1D2B64);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   color: white;
   overflow-x: hidden;
 }
 
-.animated-bg {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: url('assets/animations/ocean-waves.gif') center center/cover no-repeat;
-  z-index: -2;
-  opacity: 0.6;
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
   text-align: center;
-  padding: 100px 20px 50px;
+  padding: 100px 20px 80px;
 }
 
 #typewriter {
   font-size: 2.5rem;
   font-weight: bold;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #F8CDDA; }
+  to { text-shadow: 0 0 10px #fff, 0 0 20px #1D2B64; }
 }
 
 .subtitle {
@@ -39,7 +44,7 @@ header {
   text-decoration: none;
   color: white;
   transition: all 0.3s ease-in-out;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   display: inline-block;
 }
 
@@ -60,51 +65,4 @@ header {
 
 .project-box.highlight {
   margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 15px;
-  background: #ffffff10;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
-}
-
-.ocean {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 5%;
-  width: 100%;
-  background: transparent;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.wave {
-  background: url('https://i.ibb.co/wBcY1VJ/wave2.png') repeat-x;
-  position: absolute;
-  bottom: 0;
-  width: 200%;
-  height: 100%;
-  animation: wave-animation 8s linear infinite;
-  opacity: 0.3;
-}
-
-.wave:nth-child(2) {
-  animation-delay: -4s;
-  opacity: 0.2;
-}
-
-@keyframes wave-animation {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@media (max-width: 768px) {
-  .btn.contact-btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-
-  .section-box {
-    margin: 1rem;
-    padding: 1.5rem;
-  }
-}
+  padd
