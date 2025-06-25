@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to bottom, #B3EFFF, #66D4FF, #3399CC, #006699, #00334D);
+
   color: white;
   overflow-x: hidden;
 }
