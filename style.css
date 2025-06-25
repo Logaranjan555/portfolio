@@ -110,6 +110,19 @@ header {
   50% { background-position: 100% 50%; }
 }
 
+.ocean-wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.ocean-wave svg {
+  width: 100%;
+  height: 200px;
+}
+
 .sky {
   position: fixed;
   top: 0;
