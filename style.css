@@ -90,18 +90,18 @@ header {
   transform: scale(1.02);
 }
 
-/* Highlighted link for email + GitHub */
-.highlighted-link {
-  color: #FFDDEE;
+/* White colored email/github links */
+.plain-link {
+  color: white;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.highlighted-link:hover {
-  color: #ffffff;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+.plain-link:hover {
+  color: #FFDDEE;
   text-decoration: underline;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .sky {
